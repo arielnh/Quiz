@@ -1,3 +1,3 @@
 # React + TypeScript + Vite
 
-![PORTADA!](portada.webp)
+![PORTADA!](repoportada.jpg)
