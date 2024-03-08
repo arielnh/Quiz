@@ -32,7 +32,7 @@ return (
 
 
   
-  <Card elevation={8}  sx={{p: 2, textAlign: 'left', marginTop: 4, maxWidth: '100%' }}>
+  <Card elevation={8}  sx={{p: 2, textAlign: 'left', m:2, maxWidth: '90%' }} >
     
     <CardContent>
       <Typography variant='subtitle1'>
@@ -41,7 +41,7 @@ return (
     </CardContent>
    
 
-      <SyntaxHighlighter  language='javascript' style={solarizedLight} showLineNumbers wrapLines>
+      <SyntaxHighlighter  language='javascript' style={solarizedLight} wrapLines>
         {info.code}
       </SyntaxHighlighter>
 
@@ -95,7 +95,10 @@ export const Game =() =>{
                Siguiente
             </Button>
           </Stack>
-            <Question info={questionInfo} />
+          <Stack alignItems='center' >
+
+            <Question info={questionInfo}  />
+          </Stack>
        </>
     )
 }
