@@ -3,7 +3,7 @@ import { useQuestionsStore } from './store/questions'
 import { Score } from './Score'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import {solarizedLight} from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import { Card, CardContent,Button, List, ListItem, ListItemButton, Stack, Typography } from '@mui/material'
+import {Paper, Box, Card, CardContent,Button, List, ListItem, ListItemButton, Stack, Typography } from '@mui/material'
 
 
 
@@ -32,7 +32,7 @@ return (
 
 
   
-  <Card elevation={8}  sx={{p: 2, textAlign: 'left',marginTop:2, maxWidth: '90%' }} >
+<Card elevation={8}  sx={{p: 2, textAlign: 'left', marginTop: 4, maxWidth: '100%'}} >
     
     <CardContent>
       <Typography variant='subtitle1'>
@@ -40,11 +40,10 @@ return (
       </Typography>
     </CardContent>
    
-
       <SyntaxHighlighter  language='javascript' style={solarizedLight} wrapLines>
         {info.code}
       </SyntaxHighlighter>
-
+    
       <List disablePadding>
 
             {info.answers.map((answer, index) => (
@@ -71,6 +70,8 @@ return (
           </List>
 
   </Card>
+
+  
 )}
 
 export const Game =() =>{
@@ -95,10 +96,10 @@ export const Game =() =>{
                Siguiente
             </Button>
           </Stack>
-          <Stack alignItems='center' >
+          
 
             <Question info={questionInfo}  />
-          </Stack>
+          
        </>
     )
 }

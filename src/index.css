@@ -27,7 +27,7 @@
   }
   
   body {
-    margin: 0;
+    margin: 2;
     display: flex;
     place-items: top;
     min-width: 320px;
