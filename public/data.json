@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "question":"¿Cuál es la salidad de este código?",
+        "code": "console.log(typeof NaN)",
+        "answers": [
+            "undefined",
+            "Nan",
+            "string",
+            "number"
+        ],
+        "correctAnswer": 3,
+        "details": "explicacion de la respuesta"
+    },
+
+    {
+        "id": 2,
+        "question":"¿Cuál es el resultado de la siguiente expresión?",
+        "code": "3 + 2 + '7'",
+        "answers": [
+            "12",
+            "327",
+            "57",
+            "Nan"
+        ],
+        "correctAnswer": 2,
+        "details": "explicacion de la respuesta"
+    },
+
+    {
+        "id": 3,
+        "question":"¿Qué devuelve la siguiente función?",
+        "code": "function sayHi() { \n console.log(name);\n console.log(age);\n var name = 'Lydia';\n let age = 21;\n } \n sayHi(); ",
+        "answers": [
+            "Lydia y undefined",
+            "Lydia y ReferenceError",
+            "ReferenceError y 21",
+            "undefined y ReferenceError"
+        ],
+        "correctAnswer": 3,
+        "details": "explicacion de la respuesta"
+    },
+    {
+        "id": 4,
+        "question":"¿Qué devuelve la siguiente función?",
+        "code": "for (var i = 0; i < 3; i++) {\n setTimeout(() => console.log(i), 1);\n }\n \n for (let i = 0; i < 3; i++) {\n setTimeout(() => console.log(i), 1);\n}",
+        "answers": [
+            "0 1 2  y  0 1 2",
+            "0 1 2  y  3 3 3",
+            "3 3 3  y  0 1 2"
+        ],
+        "correctAnswer": 2,
+        "details": "explicacion de la respuesta"
+    },
+    {
+        "id": 5,
+        "question":"¿Qué devuelve la siguiente función?",
+        "code": "+true;\n!\"Lydia\";",
+        "answers": [
+            "1 y false",
+            "false y NaN",
+            "false y false"
+        ],
+        "correctAnswer": 2,
+        "details": "explicacion de la respuesta"
+    },
+    {
+        "id": 6,
+        "question":"¿Qué devuelve la siguiente función?",
+        "code": "let c = { greeting: \"Hey!\" };\n let d;\n\nd = c;\n c.greeting = \"Hello\";\nconsole.log(d.greeting);",
+        "answers": [
+            "Hello",
+            "undefined",
+            "ReferenceError",
+            "TypeError"
+        ],
+        "correctAnswer": 0,
+        "details": "explicacion de la respuesta"
+    },
+    {
+        "id": 7,
+        "question":"¿Qué devuelve la siguiente función?",
+        "code": "let a = 3;\n let b = new Number(3);\n let c = 3;\n\nconsole.log(a == b);\nconsole.log(a === b);\nconsole.log(b === c);",
+        "answers": [
+            "true false true",
+            "false false true",
+            "true false false",
+            "false true true"
+        ],
+        "correctAnswer": 2,
+        "details": "explicacion de la respuesta"
+    },{
+        "id": 8,
+        "question":"¿Qué devuelve la siguiente función?",
+        "code": "let greeting;\n greetign = {}; // Typo!\n console.log(greetign);",
+        "answers": [
+            "{ }",
+            "ReferenceError: greetign is not defined",
+            "undefined"
+            
+        ],
+        "correctAnswer": 0,
+        "details": "explicacion de la respuesta"
+    },{
+        "id": 10,
+        "question":"¿Qué ocurre cuando hacemos esto?",
+        "code": "function bark() {\n console.log(\"Woof!\");\n}\n\n bark.animal = \"dog\";",
+        "answers": [
+            "No pasa nada, es totalmente correcto.",
+            "SyntaxError. No es posible agregar propiedades a una función de esta manera.",
+            "undefined",
+            "ReferenceError"
+        ],
+        "correctAnswer": 0,
+        "details": "explicacion de la respuesta"
+    },{
+        "id": 14,
+        "question":"Todos los objetos tienen prototipo",
+        "code": "",
+        "answers": [
+            "true",
+            "false"
+           
+        ],
+        "correctAnswer": 0,
+        "details": "explicacion de la respuesta"
+    }
+]
