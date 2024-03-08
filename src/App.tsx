@@ -1,6 +1,6 @@
 import {Start} from './Start'
 import './App.css'
-import {Typography, Container, Stack} from '@mui/material'
+import {Typography, Stack} from '@mui/material'
 import { JavaScriptLogo } from './JavaScriptLogo'
 import { useQuestionsStore } from './store/questions'
 import { Game } from './Game'

@@ -3,7 +3,7 @@ import { useQuestionsStore } from './store/questions'
 import { Score } from './Score'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import {solarizedLight} from 'react-syntax-highlighter/dist/esm/styles/hljs'
-import {Paper, Box, Card, CardContent,Button, List, ListItem, ListItemButton, Stack, Typography } from '@mui/material'
+import {Card, CardContent,Button, List, ListItem, ListItemButton, Stack, Typography } from '@mui/material'
 
 
 
