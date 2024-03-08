@@ -12,7 +12,7 @@ interface State {
     reset : () => void
 }
 
-const API_URL = import.meta.env.PROD ? 'https://grand-lebkuchen-080005.netlify.app/' : 'http://localhost:5173/'
+const API_URL = import.meta.env.PROD ? 'https://jstipotest.vercel.app/' : 'http://localhost:5173/'
 
 export const useQuestionsStore = create<State>()(persist((set, get) => {
     return {
