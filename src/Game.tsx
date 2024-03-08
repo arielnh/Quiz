@@ -32,7 +32,7 @@ return (
 
 
   
-  <Card elevation={8}  sx={{p: 2, textAlign: 'left', m:2, maxWidth: '90%' }} >
+  <Card elevation={8}  sx={{p: 2, textAlign: 'left',marginTop:2, maxWidth: '90%' }} >
     
     <CardContent>
       <Typography variant='subtitle1'>
